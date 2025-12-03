@@ -13,3 +13,7 @@ def is_palindrome(text: str) -> bool:
     """Zjistí, zda je text palindrom (ignoruje mezery a velikost písmen)."""
     cleaned = "".join(ch.lower() for ch in text if not ch.isspace())
     return cleaned == cleaned[::-1]
+
+def sum_positive(values: list[int]) -> int:
+    """Vrátí součet kladných čísel v seznamu."""
+    return sum(v for v in values if v > 0)
