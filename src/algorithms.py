@@ -17,3 +17,7 @@ def is_palindrome(text: str) -> bool:
 def sum_positive(values: list[int]) -> int:
     """Vrátí součet kladných čísel v seznamu."""
     return sum(v for v in values if v > 0)
+
+def filter_even(values: list[int]) -> list[int]:
+    """Vrátí pouze sudá čísla ze seznamu."""
+    return [v for v in values if v % 2 == 0]
